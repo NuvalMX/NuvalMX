@@ -1,0 +1,1151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Pagina*/
+body{
+	background: #f2f3f4;/* Color gris de fondo*/
+  width: 100vw; /* Igual al ancho de la ventana */
+  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+   overflow-x: hidden; /* Evita que el contenido se mueva a los lados */  
+   min-width: 1280px; /* Fuerza un ancho mínimo como el de una PC */   
+}
+@media screen and (max-width: 768px) {
+  body {
+    transform: scale(1);
+    width: 1280px;
+    overflow-x: auto;
+  }
+}
+
+.logo-fondo {
+  position: fixed;
+  width: 50%;/* Tamaño ajustable */
+  height: 50%;
+  background: url('/Logos/NV.png') no-repeat center;
+  background-size: contain;
+  opacity: 0.15; /* Se ve sutil */
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Detrás de todo */
+}
+
+main {
+  flex: 1;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ocupan toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+/* Cuadro encabezado*/
+header{
+	height: 14%;/*Altura*/
+	background: radial-gradient(circle, rgba(212,217,67,1) 0%, rgba(240,242,172,1) 100%);/* Fondo de colores*/
+	border-bottom-right-radius: 20vh; /* Radio del cuadro*/
+  font-size: 1rem; /* Relativo al tamaño base del navegador */
+  border: black solid .5vh;
+  
+}
+
+
+
+
+
+/* Titulo nuval*/
+.tit{
+  position: absolute;/* Centrar Nval*/
+  left: 1%;
+  top: 2.5%;
+	font-size: 10vh;/* Tamaño nuval*/
+	 font-weight: bold; /* Negrita*/
+	 font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+	 letter-spacing: .3vh;/* Espaciado entre letras */
+	 text-shadow: -.25vh 0 red, .25vh 0 cyan;
+	 font-style: italic;/* Cursiva (Que se inclinen*/
+   margin: 0;
+}
+
+
+.tit-sapi{
+  position: absolute;/* Centrar Nval*/
+  left: 22.5%;
+  top: 10%;
+	font-size: 2vh;/* Tamaño nuval*/
+	 font-weight: bold; /* Negrita*/
+	 font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+	 letter-spacing: .3vh;/* Espaciado entre letras */
+	 text-shadow: -.25vh 0 red, .25vh 0 cyan;
+	 font-style: italic;/* Cursiva (Que se inclinen*/
+   margin: 0;
+}
+
+
+
+
+/* Ocultar los botones de radio */
+/* Ocultar el contenido por defecto */
+.content {
+  display: none;
+  margin-top: 20px;
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.2em;
+}
+
+
+.horizontal-list {
+  list-style: none;
+  display: flex;
+  gap: 2vh;
+  padding: 0;
+  position: absolute;
+  font-size: 2.5vh;
+  left: 42%;
+  top: 10%;
+}
+
+.horizontal-list li {
+  padding: .2vh 1vh;
+  border-radius: .3vh;
+  cursor: pointer;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.horizontal-list li:hover {
+  background-color: #40403e;
+  color: #d4d943;
+  transform: scale(.95);
+}
+
+.horizontal-list li.active {
+  background-color: #40403e;
+  color: #d4d943;
+
+}
+
+
+
+/*Pie de página*/
+
+.pienv{
+  background: #1f1f1d;
+  height: 45%;/*Altura*/
+  position:absolute;
+  bottom: -82%;
+  width: 100%;
+  color: #d4d943; /* Color amarillo verdoso para resaltar los enlaces */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+  font-size: 4vh;/* Tamaño nuval*/
+   font-weight: bold; /* Negrita*/
+   font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+   letter-spacing: .4vh;/* Espaciado entre letras */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+   font-style: italic;/* Cursiva (Que se inclinen*/
+   padding-bottom: 0%;
+}
+
+.pienvcon{
+  background: #1f1f1d;
+  height: 45%;/*Altura*/
+  position:absolute;
+  bottom: -37.2%;
+  width: 100%;
+  color: #d4d943; /* Color amarillo verdoso para resaltar los enlaces */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+  font-size: 4vh;/* Tamaño nuval*/
+   font-weight: bold; /* Negrita*/
+   font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+   letter-spacing: .4vh;/* Espaciado entre letras */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+   font-style: italic;/* Cursiva (Que se inclinen*/
+   padding-bottom: 0%;
+}
+
+.pienvemp{
+  background: #1f1f1d;
+  height: 45%;/*Altura*/
+  position:absolute;
+  bottom: -100%;
+  width: 100%;
+  color: #d4d943; /* Color amarillo verdoso para resaltar los enlaces */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+  font-size: 4vh;/* Tamaño nuval*/
+   font-weight: bold; /* Negrita*/
+   font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+   letter-spacing: .4vh;/* Espaciado entre letras */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+   font-style: italic;/* Cursiva (Que se inclinen*/
+   padding-bottom: 0%;
+}
+
+
+
+.h1cont{
+  left: 4vh;
+  position: absolute;
+  left: 1vh;
+}
+
+
+
+
+.tit2-1{
+  position: absolute;
+  left: 7vh;
+  text-shadow: 2px 2px 5px rgba(212, 217, 67, 0.5);
+}
+.tit2-2{
+  position: absolute;
+  left: 7vh;
+  top: 40vh;
+  text-shadow: 2px 2px 5px rgba(212, 217, 67, 0.5);
+}
+.tit2-3{
+  position: absolute;
+  left: 7vh;
+  top: 67vh;
+  text-shadow: 2px 2px 5px rgba(212, 217, 67, 0.5);
+}
+.tit2-4{
+  position: absolute;
+  left: 7vh;
+  top: 100vh;
+  text-shadow: 2px 2px 5px rgba(212, 217, 67, 0.5);
+}
+
+.parrafos-1{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  top: 22vh;
+  width: 45%;
+  left: 7vh;
+  position: absolute;
+  padding: 1vh 0vh;
+  list-style-position: inside;
+}
+.parrafos-2{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  top: 46vh;
+  width: 45%;
+  left: 7vh;
+  position: absolute;
+  padding: 1vh 0vh;
+  list-style-position: inside;
+}
+
+.parrafos-3{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  top: 72vh;
+  width: 45%;
+  left: 7vh;
+  position: absolute;
+  padding: 1vh 0vh;
+  list-style-position: inside;
+}
+
+.imagen-nv {
+  position: absolute;
+  top: 1.2%; /* Distancia desde el borde inferior */
+  left: 5%; /* Distancia desde el borde derecho */
+  width: 19vh; /* Tamaño de la imagen */
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+.imagen2 {
+  position: absolute;
+  bottom: 35vh; /* Distancia desde el borde inferior */
+  right: 8vh; /* Distancia desde el borde derecho */
+  width: 70vh; /* Tamaño de la imagen */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
+  border-radius: 0.5vh; 
+  transition: opacity 0.5s ease-in-out; /* Efecto de transición */
+}
+
+
+
+.parrafos2{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  width: 50%;
+  left: 7vh;
+  position: relative;
+  padding: 1vh 0vh;
+  height: 50vh; /* Altura fija del contenedor */
+  overflow-y: auto; /* Agrega la barra de desplazamiento vertical */
+  list-style-position: inside; /* Alineación de los números dentro del contenedor */
+}
+
+
+/* Nuval */
+.logend1{
+position: absolute;
+  bottom:1.2vh; /* Distancia desde el borde inferior */
+  left: 160vh; /* Distancia desde el borde derecho */
+  width: 12vh; /* Tamaño de la imagen */
+}
+/* Geco */
+.logend2{
+position: absolute;
+  bottom:1.2vh; /* Distancia desde el borde inferior */
+  left: 175vh; /* Distancia desde el borde derecho */
+  width: 8vh; /* Tamaño de la imagen */
+}
+
+.logend1:hover{
+  transform: scale(1.2);
+}
+
+.logend2:hover{
+  transform: scale(1.2);
+}
+
+.pli {
+  margin-left: 0; /* Elimina el margen izquierdo predeterminado */
+  padding-left: 1.5em; /* Ajusta el relleno para los números/puntos */
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  width: 45%;
+  left: 7vh;
+  position: relative;
+  padding: 1vh 0vh;
+  list-style-position: inside;
+}
+
+.x {
+  text-indent: -1.5em; /* Ajusta la posición del texto respecto al número/punto */
+  padding-left: 1.5em; /* Alinea correctamente el texto */
+
+  }
+
+  .parrafos3{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  width: 93%;
+  left: 7vh;
+  position: absolute;
+  padding: 1vh 0vh;
+  list-style-position: inside;
+  }
+
+
+
+  .correo{
+    font-size: 2.5vh;
+    position: absolute;
+    left: 48vh;
+    bottom: 3.5vh;
+    color: white;
+    text-decoration: none;
+  }
+
+  .correo:hover{
+    transform: scale(1.1);
+    color: #a11985;
+  }
+  .correo:active{
+    transform: scale(1.0);
+  }
+
+
+
+  .telefono{
+    font-size: 2.5vh;
+    position: absolute;
+    left: 28.5%;
+    bottom: 25%;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .parrafos4{
+    width: 95%;
+  }
+
+
+
+
+
+  .ico1{
+  position: absolute;
+  height: 20vh;
+  left: 25vh;
+  }
+
+
+  .ico2{
+    position: absolute;
+    height: 20vh;
+    left: 81vh;
+    }
+
+    .ico3{
+      position: absolute;
+      height: 20vh;
+      left: 135vh;
+      }
+
+.tit5{
+  right: 35%;
+  position: absolute;
+  font-size: 2.7vh;
+  top: 18vh;
+}
+
+.tit6{
+  left: 5%;
+  position: absolute;
+  font-size: 2.7vh;
+  bottom: 8%;
+}
+
+.tit7{
+  position: absolute;
+  right: 25%;
+  position: absolute;
+  font-size: 2.7vh;
+  bottom: 8%;  
+}
+
+
+.qbl{
+  position: absolute;
+  width: 55%;
+  right: 1%;
+  top: 24%;
+text-align: left;
+height: 42vh;
+list-style-position: inside;
+list-style-type:disc;
+}
+
+.pqea{
+  position: absolute;
+  width: 45%;
+  left: 3%;
+  bottom: -43%;
+text-align: left;
+overflow-y: auto;
+height: 44vh;
+list-style-type:disc;
+list-style-position: inside;
+}
+
+
+.valte{
+  position: absolute;
+  width: 35%;
+  height:15%;
+  right: 11%;
+  bottom: -14%; 
+list-style-type: disc;
+list-style-position: inside;
+font-size: 3.5vh;
+}
+
+.x-l1{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+.x-l2{
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+}
+
+.x-l3{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.x-l4{
+  position: absolute;
+  right: 14.5%;
+  bottom: 0%;
+}
+
+
+
+
+
+.textae{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  width: 45%;
+  left: 95vh;
+  position: relative;
+  top: 17vh;
+  text-align: justify;
+  
+}
+
+
+
+.imgnv {
+  position: absolute;
+  bottom: 25vh; /* Distancia desde el borde inferior */
+  left: 9vh; /* Distancia desde el borde derecho */
+  width: 70vh; /* Tamaño de la imagen */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
+  border-radius: 0.5vh; 
+  transition: opacity 0.5s ease-in-out; /* Efecto de transición */
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+.empaelo:hover{
+  transform: scale(1.04);
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+.empgeclo:hover{
+  transform: scale(1.04);
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+.titae{
+  position:absolute;
+  top: 23vh;
+  left: 30vh;
+  color:  #f39424 ; /* Color amarillo verdoso para resaltar los enlaces */
+
+  font-size: 4.5vh;/* Tamaño nuval*/
+   font-weight: bold; /* Negrita*/
+   font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+   letter-spacing: .2vh;/* Espaciado entre letras */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+}
+
+.titgec{
+  position:absolute;
+  top: 88vh;
+  left: 130vh;
+  color:  #d1d90f ; /* Color amarillo verdoso para resaltar los enlaces */
+  font-size: 4.5vh;/* Tamaño nuval*/
+   font-weight: bold; /* Negrita*/
+   font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+   letter-spacing: .2vh;/* Espaciado entre letras */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+  
+}
+
+.textgec{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.5vh;
+  width: 45%;
+  left: 9.2vh;
+  position: relative;
+  top: 49vh;
+  text-align: justify;
+}
+
+
+.divisionemp{
+  background: black;
+  height: .5vh;
+  width: 95%;
+  position: absolute;
+  top: 81%;
+  right: 2.5%;
+}
+
+
+.imgec {
+  position: absolute;
+  bottom: -50vh; /* Distancia desde el borde inferior */
+  left: 105vh; /* Distancia desde el borde derecho */
+  width: 70vh; /* Tamaño de la imagen */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
+  border-radius: 0.5vh; 
+  transition: opacity 0.5s ease-in-out; /* Efecto de transición */
+  filter: blur(0.5px); /* Suaviza los bordes */
+  
+}
+
+.pietres{
+  background: #1f1f1d;
+  height: 10vh;/*Altura*/
+  position:absolute;
+  bottom: -150vh;
+  width: 100%;
+  color: #d4d943; /* Color amarillo verdoso para resaltar los enlaces */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+  font-size: 4vh;/* Tamaño nuval*/
+   font-weight: bold; /* Negrita*/
+   font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+   letter-spacing: .4vh;/* Espaciado entre letras */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+   font-style: italic;/* Cursiva (Que se inclinen*/
+   padding-bottom: 0%;
+}
+
+
+strong{
+  color: #d4d943;
+  -webkit-text-stroke: .03vh black;
+}
+
+.txtsapisa{
+  font-family: 'Verdana', sans-serif;
+  font-size: 1.5vh;
+  width: 37.5%;
+  left: 109vh;
+  top: 75vh;
+  position: absolute;
+  text-align: justify;
+}
+
+.titsapisa{
+  position: absolute;
+  left: 108.4vh;
+  top: 70vh;
+  text-shadow: 2px 2px 5px rgba(212, 217, 67, 0.5);
+  font-size: 2.5vh;
+}
+
+
+
+
+
+.pieqs{
+  background: #1f1f1d;
+  height: 10vh;/*Altura*/
+  position:absolute;
+  bottom: -40vh;
+  width: 100%;
+  color: #d4d943; /* Color amarillo verdoso para resaltar los enlaces */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+  font-size: 4vh;/* Tamaño nuval*/
+   font-weight: bold; /* Negrita*/
+   font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+   letter-spacing: .4vh;/* Espaciado entre letras */
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+   font-style: italic;/* Cursiva (Que se inclinen*/
+   padding-bottom: 0%;
+}
+
+.divcont{
+  position: absolute;
+ 
+  height: 84%;
+  width: 98%;
+  top: 15%;
+  left: 1%;
+  border-radius: 2vh;
+
+}
+
+.mapa{
+  position: relative;
+  top: 10vh;
+  left: 10vh;
+  border-radius: 2vh;
+}
+
+
+.icorreo{
+  height: 20vh;
+  position: absolute;
+  left: 110vh;
+  bottom: 52vh;
+  display: block;
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+.icorreo:hover{
+  transform: scale(1.1);
+}
+
+.icorreo:active{
+  transform: scale(1.0);
+}
+
+.icowp{
+  height: 20vh;
+  position: absolute;
+  left: 150vh;
+  bottom: 52vh;
+  display: block;
+}
+
+.icowp:hover{
+  transform: scale(1.1);
+}
+
+.icowp:active{
+  transform: scale(1.0);
+}
+
+.h4cont{
+  position: absolute;
+  left: 107vh;
+  bottom: 40vh;
+  font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+  font-size: 5vh;
+  color: #d4d943;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/* Sombras*/
+  -webkit-text-stroke: 1px #282828;
+}
+
+.pcont{
+  position: absolute;
+  left: 107vh;
+  bottom: 25vh;
+  font-family: 'Verdana', sans-serif;/* Tipo de letra*/
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+
+.empaelo{
+  position: absolute;
+    top: 18%; /* Distancia desde el borde inferior */
+    left: 34vh; /* Distancia desde el borde derecho */
+    width: 21vh; /* Tamaño de la imagen */
+
+  }
+  /* Geco */
+  .empgeclo{
+    position: absolute;
+    bottom: 1vh; /* Distancia desde el borde inferior */
+    right: 20%; /* Distancia desde el borde derecho */
+    width: 21vh; /* Tamaño de la imagen */
+  }
+  
+
+
+/* Menu*/
+
+.mh1{
+  position: absolute;
+  left: 9%;
+  top: 17%;
+  font-family: 'Verdana', sans-serif;
+
+}
+
+.mh2{
+  position: absolute;
+  left: 46%;
+  top: 17%;
+  font-family: 'Verdana', sans-serif;
+}
+
+.mh3{
+  position: relative;
+  color: black;
+  font-family: 'Verdana', sans-serif;
+  position: relative;
+  left: 35%;
+  top: 10%;
+}
+
+.mp1{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.1vh;
+  width: 79%;
+  padding: 1vh 0vh;
+  position: relative;
+  left: 12%;
+  text-align: justify;
+  list-style-position: inside;
+  top: 15%;
+}
+
+.mp4{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.1vh;
+  width: 80%;
+  padding: 1vh 0vh;
+  position: relative;
+  left: 10%;
+  text-align: justify;
+  list-style-position: inside;
+  top: 15%;
+}
+
+.mp2{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.1vh;
+  width: 45%;
+  padding: 1vh 0vh;
+  position: absolute;
+  right:  9%;
+  text-align: justify;
+  list-style-position: inside;
+  top: 34%;
+  font-style: ;
+}
+
+.mp3{
+  font-family: 'Verdana', sans-serif;
+  font-size: 2.1vh;
+  width: 45%;
+  padding: 1vh 0vh;
+  position: absolute;
+  left: 9%;
+  text-align: justify;
+  list-style-position: inside;
+  top: 34%;
+  font-style: ;
+}
+
+
+.mico1{
+  width: 32%;
+  height: 69%;
+  position: relative;
+  left: 3%;
+  top: 11%;
+}
+
+.mico2{
+  width: 20vh;
+  position: relative;
+  left: 30%;
+  top: 13%;
+}
+.mico3{
+  width: 19vh;
+  position: relative;
+  left: 33%;
+  top: 13%;
+}
+
+.mico4{
+  width: 18vh;
+  position: relative;
+  left: 33%;
+  top: 13%;
+}
+
+.circulo1 {
+  position: absolute;
+  left: 2.5%;
+  top: 15%;
+  width: 95%; /* Ancho */
+  height: 30%; /* Alto */
+  
+  
+}
+
+.circulo2{
+  position: absolute;
+  left: 2.5%;
+  top: 45%;
+  width: 95%; /* Ancho */
+  height: 30%; /* Alto */
+}
+
+.circulo3{
+  position: absolute;
+  left: 2.5%;
+  top: 75%;
+  width: 95%; /* Ancho */
+  height: 30%; /* Alto */
+}
+
+.circulo4{
+  position: absolute;
+  left: 2.5%;
+  top: 105%;
+  width: 95%; /* Ancho */
+  height: 30%; /* Alto */
+}
+
+.circulo1:hover{
+  transform: scale(1.015);
+  cursor: pointer;
+  background: #40403e2e;
+}
+
+.circulo2:hover{
+  transform: scale(1.015);
+  cursor: pointer;
+  background: #40403e2e;
+}
+
+.circulo3:hover{
+  transform: scale(1.015);
+  cursor: pointer;
+  background: #40403e2e;
+}
+
+.circulo4:hover{
+  transform: scale(1.015);
+  cursor: pointer;
+  background: #40403e2e;
+}
+
+.mdid{
+background: black;
+position: absolute;
+width: 95%;
+top: 110vh;
+height: 16vh;
+cursor: pointer;
+left: 2.5%;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
+
+}
+
+.mdid:hover{
+transform: scale(1.02);
+}
+
+.laesn{
+  width: 20vh;
+top: 1vh;
+position: relative;
+left: 30%;
+filter: blur(0.5px); /* Suaviza los bordes */
+}
+.lgecosn{
+  width: 20vh;
+top: 1vh;
+position: relative;
+left: 48%;
+filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+
+.siguiente1ico{
+  position: absolute;
+  width: 6vh;
+background: #d7d731;
+ 
+  right: 4%;
+  top: 72%;
+  border-radius: 50%;
+}
+
+.siguiente1ico:hover{
+  transform: scale(1.1);
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+
+.siguiente2ico{
+  position: absolute;
+  width: 6vh;
+background: #d7d731;
+  left: 46%;
+  top: 140%;
+  border-radius: 50%;
+}
+
+.siguiente2ico:hover{
+  transform: scale(1.1);
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+
+
+.valoresimagenes {
+  width: 75vh;
+  position: absolute;
+  left: 2%;
+  top: 24%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1.5vh;
+  transition: opacity 1s ease-in-out; /* Suaviza la transición */
+}
+
+
+
+
+.highlight {
+  background-color: rgb(137, 240, 206);
+ 
+  color: #ff7300;
+}
+
+
+
+.searchtxt{
+  position: absolute;
+  right: 7%;
+  top: 3%;
+}
+
+.buttomsearch{
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+
+
+.imagenhome1 {
+  position: absolute;
+  top: 4%; /* Distancia desde el borde inferior */
+  left: 68%; /* Distancia desde el borde derecho */
+  width: 40vh; /* Tamaño de la imagen */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
+  border-radius: 0.5vh; 
+  transition: opacity 0.5s ease-in-out; /* Efecto de transición */
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+.imagenhome2 {
+  position: absolute;
+  top: 4%; /* Distancia desde el borde inferior */
+  right:  68%; /* Distancia desde el borde derecho */
+  width: 40vh; /* Tamaño de la imagen */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); 
+  border-radius: 0.5vh; 
+  transition: opacity 0.5s ease-in-out; /* Efecto de transición */
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+.imagenhome3 {
+  position: absolute;
+  top: 7%; /* Distancia desde el borde inferior */
+  right:  72%; /* Distancia desde el borde derecho */
+  width: 22vh; /* Tamaño de la imagen */
+  border-radius: 0.5vh; 
+  transition: opacity 0.5s ease-in-out; /* Efecto de transición */
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+
+.boton1{
+  background: none;
+  border: none;
+  position: absolute;
+  left: 46.8%;
+  top: 55%;
+  color: blue;
+  font-size: 2.2vh;
+  cursor: pointer;
+}
+
+.imagen-nv{
+  cursor: pointer;
+}
+
+.mapapie{
+  position: absolute;
+  width: 20%;
+  height: 80%;
+  border-radius: 1%;
+  top: 17%;
+  left: 3%;
+}
+
+
+.piempresas{
+  position: absolute;
+  right:6%;
+}
+
+.empresaspie{
+  width: 25%;
+  position: absolute;
+  right: 3%;
+  top: 22%;
+  cursor: pointer;
+  filter: blur(0.5px); /* Suaviza los bordes */
+}
+.empresaspie:hover{
+transform: scale(1.02);
+filter: blur(0.5px); /* Suaviza los bordes */
+
+}
+
+.h1contpie{
+  left: 4%;
+  position: absolute;
+}
+
+.piecorreo{
+  position: absolute;
+  width: 6%;
+  left: 28.9%;
+  top: 28%;
+}
+
+.piewp{
+  position: absolute;
+  width: 5.2%;
+  left: 38.5%;
+  top: 28.5%;
+}
+
+.piecorreo:hover{
+  transform: scale(1.04);
+}
+.piewp:hover{
+  transform: scale(1.04);
+}
+
+
+.snpie{
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  font-size: 2.5vh;
+  color: white;
+}
+
+.nvpie{
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  font-size: 2.5vh;
+  color: white;
+}
+
+.empie{
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  font-size: 2.5vh;
+  color: white;
+  
+}
+
+.copie{
+  position: absolute;
+  left: 50%;
+  top: 74%;
+  font-size: 2.5vh;
+  color: white;
+}
+.snpie:hover{
+cursor: pointer;
+transform: scale(1.03);
+}
+.nvpie:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  }
+.empie:hover{
+cursor: pointer;
+transform: scale(1.03);
+}
+.copie:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  }

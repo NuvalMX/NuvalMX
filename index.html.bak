@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <!-- Pestaña del navegador -->
+    <link rel="icon" href="NV.png" type="image/png">
+    <!-- Icono de la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Acomoda la página -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!-- Conexión con las css -->
+    <!-- Con esto reconoce tildes -->
+  </head>
+  <!-- Cuerpo de la página -->
+  <body>
+    <!-- Cuadro de encabezado -->
+    <!-- Cuadro de encabezado -->
+    <header>
+      <h1 class="tit">NUVAL</h1>
+      <!-- Lista de opciones -->
+      <ul class="horizontal-list">
+        <li onclick="showContent(0)">Menu</li>
+        <li onclick="showContent(1)">¿Quienes somos?:</li>
+        <li onclick="showContent(2)">Nuestra visión:</li>
+        <li onclick="showContent(3)">Empresas:</li>
+        <li onclick="showContent(4)">Contacto</li>
+      </ul>
+    </header>
+    <main>
+      <div class="contenedor"> <img src="NV.png" alt="Logo NV" class="imagen-nv">
+      </div>
+      <!-- Contenedor de contenido que se muestra según la opción seleccionada -->
+      <div id="content1" class="content">
+        <h2 class="tit2">¿Quienes somos?</h2>
+        <p class="parrafos">Somos una empresa dedicada a fomentar el crecimiento
+          de diversos proyectos mediante la atracción. Además, ofrecemos una
+          plataforma ideal para nuevos emprendimientos y pequeñas empresas que
+          buscan consolidarse y expandirse.</p>
+        <h2 class="tit2">¿Que nos caracteriza?:</h2>
+        <ul class="parrafos">
+          <li class="x">Facilitamos la creación de convenios claros entre
+            accionistas y la administración de los proyectos.</li>
+          <li class="x">Actuamos como un medio confiable para atraer y gestionar
+            aportaciones de capital, impulsando el crecimiento y desarrollo de
+            proyectos o nuevos emprendimientos.</li>
+        </ul>
+        <h2 class="tit2">Beneficios de la Promoción de Inversión:</h2>
+        <ul class="parrafos">
+          <li class="x">Impulsamos el desarrollo de nuevos negocios mediante
+            diversas facilidades diseñadas para fomentar la inversión.</li>
+          <li class="x">Creamos condiciones que facilitan la inyección de
+            capital, respaldadas por un consejo de accionistas.</li>
+          <li class="x">Establecemos la diferenciación de derechos entre
+            accionistas, garantizando claridad y equidad en la participación.</li>
+        </ul>
+        <h2 class="tit2">¿Conoces la diferencia entre una SAPI y SA de CV?:</h2>
+        <p class="parrafos3"> La Sociedad Anónima (S.A.) es la figura jurídica
+          más común en México y cuenta con más de 100 años de existencia. Sin
+          embargo, este régimen no siempre satisface las necesidades de los
+          emprendedores e inversionistas modernos.
+          Por su parte, las Sociedades Anónimas de Capital Variable (S.A. de
+          C.V.) establecen derechos patrimoniales y corporativos para los
+          socios, pero la Sociedad Anónima Promotora de Inversión (S.A.P.I.)
+          moderniza el régimen corporativo, permitiendo que los socios pacten
+          asuntos directamente relacionados con dichos derechos, ofreciendo
+          mayor flexibilidad.
+          En Operadora Nuval, buscamos proporcionar argumentos atractivos para
+          aquellos interesados en invertir en empresas o iniciar nuevos
+          proyectos que atraigan capital privado para su crecimiento. Además,
+          somos una compañía que ofrece beneficios significativos para los
+          inversionistas.
+          Por lo tanto, Operadora Nuval es la opción ideal para nuevos negocios
+          o startups que buscan atraer inversionistas, así como para empresas
+          que deseen formalizar un proceso de fusión. </p>
+        <div class="contenedor2"> <img src="imgae.jpg" alt="Logo NV" class="imagen2"
+            id="slider">
+        </div>
+      </div>
+      <div id="content2" class="content">
+        <div class="parrafos4">
+          <h2 class="tit2">¿Qué buscamos lograr?</h2>
+          <ol>
+            <li class="x">Fomentar mejores prácticas de competitividad
+              empresarial.</li>
+            <li class="x">Establecer mecanismos para proteger a inversionistas y
+              socios minoritarios, facilitando tanto la entrada como la salida
+              de socios.</li>
+            <li class="x">Garantizar que los accionistas de nuevas unidades
+              participen únicamente en los resultados de su unidad, sin impactar
+              la sociedad inicial ni las demás unidades de negocio.</li>
+            <li class="x">Limitar la responsabilidad por daños y perjuicios
+              ocasionados por consejeros y directivos.</li>
+            <li class="x">Otorgar derechos patrimoniales a los nuevos
+              accionistas, incluyendo el pago de intereses previamente pactados
+              como anticipo de los dividendos al final del ejercicio.</li>
+            <li class="x">Generar certidumbre para los nuevos accionistas al
+              permitir negociar el plazo de su inversión y asegurar un
+              rendimiento mínimo garantizado.</li>
+            <li class="x">Facilitar la incorporación o salida de directivos
+              clave, como el CFO (Chief Financial Officer) y el CMO (Chief
+              Marketing Officer), mediante mecanismos definidos</li>
+            <li class="x">Permitir que las SAPI adquieran sus propias acciones.</li>
+          </ol>
+          <h2 class="tit2">¿Para que estámos aquí?</h2>
+          <li class="x">Facilitar la inversión en startups y empresas en
+            crecimiento.</li>
+          <li class="x"></li>
+          Brindar seguridad y estructura a inversionistas y socios.
+          <li class="x"></li>
+          Proteger el capital mediante mecanismos que delimitan derechos y
+          responsabilidades.
+          <li class="x"></li>
+          Promover mejores prácticas empresariales y competitividad.
+          <li class="x"></li>
+          Apoyar la expansión y formalización de negocios a través de modelos
+          como la SAPI.
+          <h2 class="tit2">Valores</h2>
+        </div>
+      </div>
+      <div id="content4" class="content">
+        <p class="parrafos2"> La Sociedad Anónima (S.A.) es la figura jurídica
+          más común en México y cuenta con más de 100 años de existencia. Sin
+          embargo, este régimen no siempre satisface las necesidades de los
+          emprendedores e inversionistas modernos.
+          Por su parte, las Sociedades Anónimas de Capital Variable (S.A. de
+          C.V.) establecen derechos patrimoniales y corporativos para los
+          socios, pero la Sociedad Anónima Promotora de Inversión (S.A.P.I.)
+          moderniza el régimen corporativo, permitiendo que los socios pacten
+          asuntos directamente relacionados con dichos derechos, ofreciendo
+          mayor flexibilidad.
+          En Operadora Nuval, buscamos proporcionar argumentos atractivos para
+          aquellos interesados en invertir en empresas o iniciar nuevos
+          proyectos que atraigan capital privado para su crecimiento. Además,
+          somos una compañía que ofrece beneficios significativos para los
+          inversionistas.
+          Por lo tanto, Operadora Nuval es la opción ideal para nuevos negocios
+          o startups que buscan atraer inversionistas, así como para empresas
+          que deseen formalizar un proceso de fusión. </p>
+      </div>
+    </main>
+    <footer class="pie">
+      <h2 class="h1cont">Contacto:</h2>
+      <a href="mailto:rh@nuval.mx" class="correo">rh@nuval.mx</a>
+      <p class="telefono">8181231845</p>
+      <a href="https://ae.media"><img src="logoae.png" class="logend1"></a>
+      <a href="https://atvgeco.com"><img src="logogeco.png" class="logend2"></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

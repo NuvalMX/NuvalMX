@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=1280">
+    <meta name="viewport" content="width=1280, user-scalable=no">
+    <title>NUVAL</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <!-- Pestaña del navegador -->
+    <link rel="icon" href="/Logos/lnv.png" type="image/png">
+    <!-- Icono de la página -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Acomoda la página -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <!-- Conexión con las css -->
+    <!-- Con esto reconoce tildes -->
+  </head>
+  <!-- Cuerpo de la página -->
+  <body>
+    <!-- Cuadro de encabezado -->
+    
+    <header>
+      
+      <!-- Lista de opciones -->
+      <ul class="horizontal-list">
+        <li onclick="showContent(0)">Home</li>
+        <li onclick="showContent(1)">Sobre nosotros</li>
+        <li onclick="showContent(2)">Nuestra visión</li>
+        <li onclick="showContent(3)">Empresas</li>
+        <li onclick="showContent(4)">Contacto</li>
+      </ul>
+    
+      <input type="text" id="searchBox" placeholder="Buscar palabra..." class="searchtxt">
+    <button onclick="searchText()" class="buttomsearch">Buscar</button>
+
+
+    </header>
+    <main>
+      <div class="contenedor"> <img src="/Logos/lnv.png" alt="Logo NV" class="imagen-nv" onclick="showContent(0)">
+      </div>
+
+
+      <div class="logo-fondo"></div>
+
+
+<!-- Area 1-->
+      <div id="content1" class="content">
+        <h2 class="tit2-1">¿Quienes somos?</h2>
+        <p class="parrafos-1">Somos una empresa dedicada a fomentar el <strong>crecimiento</strong>
+          de diversos <strong>proyectos</strong> mediante la <strong>atracción.</strong> Además, ofrecemos una
+          plataforma ideal para <strong>nuevos emprendimientos</strong> y <strong>pequeñas empresas</strong> que
+          buscan <strong>consolidarse</strong> y <strong>expandirse</strong>.</p><br><br>
+        <h2 class="tit2-2">¿Que nos caracteriza?</h2>
+        <ul class="parrafos-2">
+          <li class="x">Facilitamos la <strong>creación</strong> de convenios <strong>claros</strong> entre
+            <strong>accionistas</strong> y la <strong>administración</strong> de los <strong>proyectos.</strong></li>
+          <li class="x">Actuamos como un medio <strong>confiable</strong> para <strong>atraer</strong> y <strong>gestionar
+            aportaciones de capital</strong>, impulsando el <strong>crecimiento</strong> y <strong>desarrollo</strong> de
+            proyectos o nuevos emprendimientos.</li>
+        </ul><br><br>
+        <h2 class="tit2-3">Ventajas de la Inversión</h2>
+        <ul class="parrafos-3">
+          <li class="x"><strong>Impulsamos</strong> el <strong>desarrollo</strong> de nuevos negocios mediante
+            diversas <strong>facilidades</strong> diseñadas para fomentar la <strong>inversión</strong>.</li>
+          <li class="x">Creamos condiciones que facilitan la <strong>inyección</strong> de
+            <strong>capital</strong>, respaldadas por un <strong>consejo</strong> de <strong>accionistas</strong>.</li>
+          <li class="x">Establecemos la <strong>diferenciación</strong> de <strong>derechos</strong> entre
+            accionistas, garantizando <strong>claridad</strong> y <strong>equidad</strong> en la participación.</li>
+        </ul>
+        <h2 class="titsapisa">¿Conoces la diferencia entre una SAPI y SA de CV?</h2>
+        <p class="txtsapisa"> La <strong>Sociedad Anónima</strong> (S.A.) es la figura jurídica
+          más común en México y cuenta con más de 100 años de existencia. Sin
+          embargo, este régimen no siempre satisface las necesidades de los
+          emprendedores e inversionistas modernos.
+          Por su parte, las Sociedades Anónimas de Capital Variable (S.A. de
+          C.V.) establecen derechos patrimoniales y corporativos para los
+          socios, pero la Sociedad Anónima Promotora de Inversión <strong>(S.A.P.I.)</strong>
+          moderniza el régimen corporativo, permitiendo que los socios pacten
+          asuntos directamente relacionados con dichos derechos, ofreciendo
+          mayor <strong>flexibilidad</strong>.
+          En Operadora Nuval, buscamos proporcionar argumentos atractivos para
+          aquellos interesados en invertir en empresas o iniciar nuevos
+          proyectos que atraigan <strong>capital privado</strong> para su crecimiento. Además,
+          somos una compañía que ofrece beneficios significativos para los
+          <strong>inversionistas</strong>.
+          Por lo tanto, Operadora Nuval es la opción ideal para nuevos negocios
+          o <strong>startups</strong> que buscan atraer inversionistas, así como para empresas
+          que deseen formalizar un proceso de <strong>fusión</strong>. </p>
+         <img src="/Imagenes/a1.jpg" alt="Logo NV" class="imagen2" id="slider">
+         <br><br>
+         <h2 class="tit2-4">Marcas de inversión:</h2>
+
+         <div class="mdid" onclick="showContent(3)">
+          <img src="/Logos/logoae.png" class="laesn">
+          <img src="/Logos/gecologo.png" class="lgecosn">
+         </div>
+
+
+         <footer class="pienv">
+          <h2 class="h1contpie">Contacto:</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60951.934953832235!2d-100.35715495028462!3d25.681721281091946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629672a63422a3%3A0xbbed740389746da9!2sAE.media!5e0!3m2!1ses-419!2smx!4v1738876647955!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapapie"></iframe>
+          <h2 class="piempresas">Empresas</h2>
+          <img id="slider6" src="/Logos/logoae.png" alt="Diapositiva6" class="empresaspie" onclick="showContent(3)">
+          <a href="mailto:rh@nuval.mx?subject=SOLICITUD%20DE%20INFORMACIÓN&body=Hola,%20requiero%20información%20sobre%20NUVAL"><img src="/Iconos/icoreo.png" class="piecorreo" ></a>
+          <p class="telefono">Tel: 8181231845</p>
+          <a href="https://wa.me/528184699882?text=Hola,%20requiero%20más%20información%20sobre%20NUVAL" target="_blank"><img src="/Iconos/icowp.png" alt="" class="piewp"></a>
+          <p class="snpie" onclick="showContent(1)">SOBRE NOSOTROS</p>
+          <p class="nvpie" onclick="showContent(2)">NUESTRA VISIÓN</p>
+          <p class="empie" onclick="showContent(3)">EMPRESAS</p>
+          <p class="copie" onclick="showContent(4)">CONTACTO</p>
+        </footer>
+
+
+
+       
+      </div>
+<!-- Area 2 -->
+      <div id="content2" class="content">
+
+        
+        <div class="parrafos4">
+          <h2 class="tit5">¿Qué buscamos lograr?</h2>
+          <ol class="qbl">
+            <li class="x">Fomentar mejores prácticas de <strong>competitividad  empresarial</strong>.
+             </li>
+            <li class="x">Establecer mecanismos para <strong>proteger</strong> a inversionistas y
+              socios minoritarios, <strong>facilitando</strong> tanto la entrada como la salida
+              de socios.</li>
+            <li class="x"><strong>Garantizar</strong> que los accionistas de nuevas unidades
+              participen <strong>únicamente</strong> en los resultados de su unidad, sin impactar
+              la sociedad inicial ni las demás unidades de negocio.</li>
+            <li class="x">Limitar la <strong>responsabilidad</strong> por daños y perjuicios
+              ocasionados por consejeros y directivos.</li>
+            <li class="x">Otorgar <strong>derechos patrimoniales</strong> a los nuevos
+              accionistas, incluyendo el pago de intereses previamente pactados
+              como anticipo de los <strong>dividendos</strong> al final del ejercicio.</li>
+            <li class="x">Generar <strong>certidumbre</strong> para los nuevos accionistas al
+              permitir negociar el plazo de su inversión y asegurar un
+              <strong>rendimiento</strong> mínimo garantizado.</li>
+            <li class="x">Facilitar la <strong>incorporación</strong> o salida de directivos
+              clave, como el CFO (Chief Financial Officer) y el CMO (Chief
+              Marketing Officer), mediante <strong>mecanismos definidos</strong></li>
+            <li class="x">Permitir que las <strong>SAPI</strong> adquieran sus propias <strong>acciones</strong>.</li><br>
+          </ol>
+          <h2 class="tit6">¿Para que estámos aquí?</h2>
+        <ol class="pqea">
+          <li class="x">Facilitar la <strong>inversión</strong> en <strong>startups</strong> y empresas en crecimiento.</li>
+          <li class="x">Brindar <strong>seguridad</strong> y <strong>estructura</strong> a inversionistas y socios.</li>
+          <li class="x"><strong>Proteger</strong> el <strong>capital</strong> mediante <strong>mecanismos</strong> que delimitan derechos y responsabilidades.</li>
+          <li class="x">Promover <strong>mejores prácticas</strong> empresariales y <strong>competitividad</strong>.</li>
+          <li class="x">Apoyar la <strong>expansión</strong> y <strong>formalización</strong> de <strong>negocios</strong> a través de modelos como la <strong>SAPI</strong>.</li>
+        </ol>
+          <h2 class="tit7">Valores</h2>
+          <ol class="valte">
+            <li class="x-l1"><strong>Integridad</strong></li><br>
+            <li class="x-l2"><strong>Cortesía</strong></li><br>
+            <li class="x-l3"><strong>Perseverancia</strong></li><br>
+            <li class="x-l4"><strong>Modestia</strong></li>
+          </ol>
+
+
+          <img id="slider5" src="imagenes/p1.jpg" alt="Diapositiva5" class="valoresimagenes">
+
+
+
+          <footer class="pienv">
+            <h2 class="h1contpie">Contacto:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60951.934953832235!2d-100.35715495028462!3d25.681721281091946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629672a63422a3%3A0xbbed740389746da9!2sAE.media!5e0!3m2!1ses-419!2smx!4v1738876647955!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapapie"></iframe>
+            <h2 class="piempresas">Empresas</h2>
+            <img id="slider6" src="/Logos/logoae.png" alt="Diapositiva6" class="empresaspie" onclick="showContent(3)">
+            <a href="mailto:rh@nuval.mx?subject=SOLICITUD%20DE%20INFORMACIÓN&body=Hola,%20requiero%20información%20sobre%20NUVAL"><img src="/Iconos/icoreo.png" class="piecorreo" ></a>
+            <p class="telefono">Tel: 8181231845</p>
+            <a href="https://wa.me/528184699882?text=Hola,%20requiero%20más%20información%20sobre%20NUVAL" target="_blank"><img src="/Iconos/icowp.png" alt="" class="piewp"></a>
+            <p class="snpie" onclick="showContent(1)">SOBRE NOSOTROS</p>
+            <p class="nvpie" onclick="showContent(2)">NUESTRA VISIÓN</p>
+            <p class="empie" onclick="showContent(3)">EMPRESAS</p>
+            <p class="copie" onclick="showContent(4)">CONTACTO</p>
+          </footer>
+
+        </div>
+
+
+
+
+
+      </div>
+<!-- Area 3 -->
+      <div id="content3" class="content">
+        <div>
+          <a href="https://ae.media"><img src="/Logos/logoae.png" class="empaelo"></a>
+          <p class="textae">Esta compañía se especializa en la <strong>comercialización</strong> de <strong>medios exteriores</strong> y <strong>anuncios publicitarios</strong> para <strong>negocios</strong>. Sus oficinas centrales se encuentran en <strong>Monterrey</strong>, Nuevo León, y ofrece <strong>cobertura</strong> en medios exteriores en las <strong>principales ciudades</strong> de <strong>México</strong>. Además, sus <strong>ubicaciones estratégicas</strong> en avenidas altamente transitadas aseguran que los <strong>mensajes publicitarios</strong> sean vistos por automovilistas y peatones.
+          <br><br><br>
+          Gracias a su amplia experiencia, la empresa proporciona <strong>asesoría personalizada</strong> para <strong>proyectos</strong> de medios exteriores y anuncios publicitarios. Con el apoyo de sus <strong>ejecutivos</strong>, cada campaña o negocio puede alcanzar <strong>resultados altamente destacados</strong>.
+          </p>
+          <a href="https://ae.media"><img src="/Iconos/siguiente.png" class="siguiente1ico"></a>
+          <div class="divisionemp"></div>
+          <a href="https://atvgeco.com"><img src="/Logos/gecologo.png" class="empgeclo"></a>
+          <p class="textgec">
+            ATV Geco es una <strong>plataforma</strong> diseñada para reunir en una <strong>comunidad</strong> a entusiastas y aficionados de <strong>vehículos todo terreno</strong> y recreativos, conocidos como <strong>RZR’s</strong> o <strong>cuatrimotos</strong>.
+            <br><br><br>
+            A través de su sitio web, ofrece información sobre estos vehículos, además de facilitar la <strong>conexión</strong> entre <strong>compradores</strong> y <strong>vendedores</strong>. También brinda opciones para quienes buscan <strong>resguardar</strong> su ATV o <strong>rentar</strong> uno para “vivir la experiencia”. Esto abre la puerta a <strong>empresas</strong>, <strong>proveedores</strong> de la industria, así como a grupos y <strong>clubes</strong>, para formar parte del entorno ATV Geco.
+          </p>
+          <a href="https://atvgeco.com"><img src="/Iconos/siguiente.png" class="siguiente2ico"></a>
+          </div>
+          <img src="/Imagenes/f1.jpg" alt="Logo NV" class="imgnv" id="slider1">
+          <img src="/Imagenes/i1.jpg" alt="Logo NV" class="imgec" id="slider2">
+
+
+
+          <footer class="pienvemp">
+            <h2 class="h1contpie">Contacto:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60951.934953832235!2d-100.35715495028462!3d25.681721281091946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629672a63422a3%3A0xbbed740389746da9!2sAE.media!5e0!3m2!1ses-419!2smx!4v1738876647955!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapapie"></iframe>
+            <h2 class="piempresas">Empresas</h2>
+            <img id="slider6" src="/Logos/logoae.png" alt="Diapositiva6" class="empresaspie" onclick="showContent(3)">
+            <a href="mailto:rh@nuval.mx?subject=SOLICITUD%20DE%20INFORMACIÓN&body=Hola,%20requiero%20información%20sobre%20NUVAL"><img src="/Iconos/icoreo.png" class="piecorreo" ></a>
+            <p class="telefono">Tel: 8181231845</p>
+            <a href="https://wa.me/528184699882?text=Hola,%20requiero%20más%20información%20sobre%20NUVAL" target="_blank"><img src="/Iconos/icowp.png" alt="" class="piewp"></a>
+            <p class="snpie" onclick="showContent(1)">SOBRE NOSOTROS</p>
+            <p class="nvpie" onclick="showContent(2)">NUESTRA VISIÓN</p>
+            <p class="empie" onclick="showContent(3)">EMPRESAS</p>
+            <p class="copie" onclick="showContent(4)">CONTACTO</p>
+          </footer>
+
+
+        </div>
+
+<!-- Area 4 -->
+      <div id="content4" class="content">
+        <div class="divcont">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60951.934953832235!2d-100.35715495028462!3d25.681721281091946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629672a63422a3%3A0xbbed740389746da9!2sAE.media!5e0!3m2!1ses-419!2smx!4v1738876647955!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+          <h4 class="h4cont">Dirección:</h4>
+          <p class="pcont">1a Avenida 327, Colonia las Cumbres, 64610 Monterrey, N.L.<br><br>TEL: 8181231845</p>
+          <a href="mailto:rh@nuval.mx?subject=SOLICITUD%20DE%20INFORMACIÓN&body=Hola,%20requiero%20información%20sobre%20NUVAL"><img src="/Iconos/icoreo.png" class="icorreo" ></a>
+          <a href="https://wa.me/528184699882?text=Hola,%20requiero%20más%20información%20sobre%20NUVAL" target="_blank"><img src="/Iconos/icowp.png" alt="" class="icowp"></a>
+    
+        </div>
+
+        <footer class="pienvcon">
+          <h2 class="h1contpie">Contacto:</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60951.934953832235!2d-100.35715495028462!3d25.681721281091946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629672a63422a3%3A0xbbed740389746da9!2sAE.media!5e0!3m2!1ses-419!2smx!4v1738876647955!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapapie"></iframe>
+          <h2 class="piempresas">Empresas</h2>
+          <img id="slider6" src="/Logos/logoae.png" alt="Diapositiva6" class="empresaspie" onclick="showContent(3)">
+          <a href="mailto:rh@nuval.mx?subject=SOLICITUD%20DE%20INFORMACIÓN&body=Hola,%20requiero%20información%20sobre%20NUVAL"><img src="/Iconos/icoreo.png" class="piecorreo" ></a>
+          <p class="telefono">Tel: 8181231845</p>
+          <a href="https://wa.me/528184699882?text=Hola,%20requiero%20más%20información%20sobre%20NUVAL" target="_blank"><img src="/Iconos/icowp.png" alt="" class="piewp"></a>
+          <p class="snpie" onclick="showContent(1)">SOBRE NOSOTROS</p>
+          <p class="nvpie" onclick="showContent(2)">NUESTRA VISIÓN</p>
+          <p class="empie" onclick="showContent(3)">EMPRESAS</p>
+          <p class="copie" onclick="showContent(4)">CONTACTO</p>
+        </footer>
+      </div>
+
+<!-- Area 0 -->
+       <div id="content0" class="content">
+        
+        
+        
+        <div class="circulo1" onclick="showContent(1)"><h3 class="mh1">Sobre Nosotros</h3><img src="/Imagenes/a1.jpg" alt="Logo NV" class="imagenhome1" id="slider">
+        <p class="mp3">Conoce nuestra misión, lo que nos hace únicos y cómo promovemos inversiones estratégicas. Además, descubre las diferencias clave entre una SAPI y una SA de CV. </p>
+        
+      </div>
+
+        <div class="circulo2" onclick="showContent(2)"><h3 class="mh2" >Nuestra visión</h3><img src="/Imagenes/p3.jpeg" class="imagenhome2">
+        <p class="mp2">En este apartado descubrirás el propósito que guía nuestro trabajo, nuestra razón de ser y los principios que nos definen.</p>
+        </div>
+
+        <div class="circulo3" onclick="showContent(3)"><h3 class="mh1">Empresas</h3><img src="/Imagenes/i2.jpg" class="imagenhome1">
+          <p class="mp3">En este apartado encontrarás las empresas que forman parte de Nuval, cada una con su propio enfoque y especialización. Desde la comercialización de medios exteriores hasta la comunidad ATV Geco, conoce cómo estas empresas ofrecen soluciones estratégicas y experiencias únicas. </p>
+        </div>
+
+        <div class="circulo4" onclick="showContent(4)"><h3 class="mh2">Contacto</h3><img src="/Iconos/icowp.png" class="imagenhome3">
+          <p class="mp2">Encuentra aquí nuestra dirección, correos y WhatsApp para comunicarte con nosotros de forma rápida y sencilla. Estamos listos para atenderte y resolver tus dudas.</p>
+        </div>
+      
+      
+
+
+
+        <footer class="pienv">
+          <h2 class="h1contpie">Contacto:</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60951.934953832235!2d-100.35715495028462!3d25.681721281091946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629672a63422a3%3A0xbbed740389746da9!2sAE.media!5e0!3m2!1ses-419!2smx!4v1738876647955!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapapie"></iframe>
+          <h2 class="piempresas">Empresas</h2>
+          <img id="slider6" src="/Logos/logoae.png" alt="Diapositiva6" class="empresaspie" onclick="showContent(3)">
+          <a href="mailto:rh@nuval.mx?subject=SOLICITUD%20DE%20INFORMACIÓN&body=Hola,%20requiero%20información%20sobre%20NUVAL"><img src="/Iconos/icoreo.png" class="piecorreo" ></a>
+          <p class="telefono">Tel: 8181231845</p>
+          <a href="https://wa.me/528184699882?text=Hola,%20requiero%20más%20información%20sobre%20NUVAL" target="_blank"><img src="/Iconos/icowp.png" alt="" class="piewp"></a>
+          <p class="snpie" onclick="showContent(1)">SOBRE NOSOTROS</p>
+          <p class="nvpie" onclick="showContent(2)">NUESTRA VISIÓN</p>
+          <p class="empie" onclick="showContent(3)">EMPRESAS</p>
+          <p class="copie" onclick="showContent(4)">CONTACTO</p>
+        </footer>
+
+      
+      </div>
+
+
+
+
+       
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
