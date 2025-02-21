@@ -111,7 +111,7 @@ function searchText() {
 
 
 
-const imagenesSlider5 = ["imagenes/p1.jpg", "imagenes/p2.jpg", "imagenes/p3.jpeg"];
+const imagenesSlider5 = ["Imagenes/p1.jpg", "Imagenes/p2.jpg", "Imagenes/p3.jpeg"];
 let indiceSlider5 = 0;
 
 const imgSlider5 = document.getElementById("slider5");
