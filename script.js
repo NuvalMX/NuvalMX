@@ -28,7 +28,7 @@ window.onload = function() {
 
 
 
-const imagenes = ["/Imagenes/a1.jpg","/Imagenes/a2.jpg", "/Imagenes/a3.jpg", "/Imagenes/a4.jpg"];
+const imagenes = ["Imagenes/a1.jpg","Imagenes/a2.jpg", "Imagenes/a3.jpg", "Imagenes/a4.jpg"];
 let indice = 0;
 
 const img = document.getElementById("slider");
@@ -55,8 +55,8 @@ setTimeout(() => {
 
 
 // Listas de imágenes para cada slider
-const images1 = ["/Imagenes/f1.jpg", "/Imagenes/f2.jpg", "/Imagenes/f3.jpg"]; // Imágenes para slider1
-const images2 = ["/Imagenes/i1.jpg", "/Imagenes/i2.jpg", "/Imagenes/i3.jpg"]; // Imágenes para slider2
+const images1 = ["Imagenes/f1.jpg", "Imagenes/f2.jpg", "Imagenes/f3.jpg"]; // Imágenes para slider1
+const images2 = ["Imagenes/i1.jpg", "Imagenes/i2.jpg", "Imagenes/i3.jpg"]; // Imágenes para slider2
 
 let index1 = 0;
 let index2 = 0;
@@ -140,7 +140,7 @@ if (imgSlider5) {
 
 
 
-const imagenesSlider6 = ["/Logos/gecologo.png", "/Logos/logoae.png"];
+const imagenesSlider6 = ["Logos/gecologo.png", "Logos/logoae.png"];
 let indiceSlider6 = 0;
 
 const imgSlider6 = document.getElementById("slider6");
